@@ -1,2 +1,2 @@
 # MyPrivateRepo
-Repo for learn  git and github
+Repo for learning  git and github
