@@ -1,7 +1,3 @@
-FROM ubuntu:latest
-
-RUN apt-get update && apt-get install -y nginx nano\
-    && apt-get clean\
-    && rm -rf /var/lib/apt/lists/*
-
-CMD ["bash"]
+FROM alpine:3.14
+RUN apk add --no-cache mysql-client
+ENTRYPOINT ["mysql"]
